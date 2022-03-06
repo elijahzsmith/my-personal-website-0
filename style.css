@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FFF;
+}
+
 li {
     list-style: none;
 }
@@ -8,19 +17,25 @@ a {
     text-decoration: none;
 }
 
+html, body {
+    height: 100%;
+}
 
 body {
-    background: #F5F5F5;
+    background: #222;
+    /* overflow: auto;
+    padding-bottom: 80px; */
+
 }
 
 header {
+    position: sticky;
+    top: 0;
     border-bottom: 1px solid;
-    background-color: darkgray;
+    background-color: #555;
+    border: 30px;
 }
 
-/* header button.insta_button {
-    left: -20px;
-} */
 
 div.pic_one img.sad_cell_pic1 {
     width: 100%;
@@ -31,7 +46,9 @@ div.pic_one img.sad_cell_pic1 {
     height: auto;
   }
   
-
+  /* Try to make the button be the spotify logo 
+     Alter the general css a bit to be more original and interesting   
+  */
   .pic_one .btn {
     position: relative;
     top: 50%;
@@ -49,9 +66,10 @@ div.pic_one img.sad_cell_pic1 {
   
   .pic_one .btn:hover {
     background-color: black;
+    color: #FFF;
   }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,10 +85,20 @@ div.pic_one img.sad_cell_pic1 {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #101010;
+    background-color: #FFF;
 }
+
+#span1 {
+    justify-content:right;
+    width: 15px;
+}
+
+.bar:hover {
+    box-shadow: black;
+}
+
 
 .nav-menu {
     display: flex;
@@ -88,14 +116,12 @@ div.pic_one img.sad_cell_pic1 {
     color: #000;
 }
 
-.nav-link:hover{
-    color: grey;
-}
-
+/* make the shadow grow as you scroll */
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 600;
-    color: #000;
+    color: #FFF;
+    text-shadow: 2px 2px red;
 }
 
 @media only screen and (max-width: 2000px) {
@@ -161,3 +187,18 @@ table tr:nth-child(odd) td {
     background-color: #e7edf0;
 }
 
+#about_foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    text-shadow: 2px 2px #635b5b;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #422d2d;
+}

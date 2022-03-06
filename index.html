@@ -5,41 +5,37 @@
       <title>Sad Cell</title>
   </head>
   <body>
-    <!-- <h1>Eli.Dev</h1> -->
 
-    <header>
         <header class="header">
             <nav class="navbar">
                 <a href="index.html" class="nav-logo">Sad Cell</a>
                 <!-- <a href="https://www.instagram.com/sadcell_/" target="_blank" class="insta_button"><button>Instagram</button></a> -->
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Shows</a>
+                        <a href="shows.html" target="_blank" class="nav-link">Shows</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="blog.html" target="_blank"  class="nav-link">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" target="_blank" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="contact.html" target="_blank" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="three_line">
                     <span class="bar"></span>
-                    <span class="bar"></span>
+                    <span id="span1" class="bar"></span>
                     <span class="bar"></span>
                 </div>
             </nav>
         </header>
 
-
-    </header>
-
     <br>
     <hr>
     <br>
+    <!-- fix spotify button so it actually opens spotify-->
     <div class="pic_one">
         <img class="sad_cell_pic1" src="img/sadCell.png" alt="SadCell">
         <button href="https://open.spotify.com/artist/6mlpUSEEnoHK7SGC8wsWkr?si=lbaieDJtTL-syUAUHVBx7Q" target="_blank" class="btn">Spotify</button>
@@ -47,16 +43,17 @@
     <br>
     <hr>
     <br>
-
-    <section>
-        <div class="open_space"></div>
-        <h2>About</h2>
-        <div>
-            <p>Sad Cell is a punk/shoegaze band based in Austin, Tx. </p>
-            <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
+    <div id="main_body">
+        <section>
+            <div class="open_space"></div>
+            <h2>About</h2>
+            <div>
+                <p>Sad Cell is a punk/shoegaze band based in Austin, Tx. </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+    </div>
     <hr>
 
     <script src="script.js"></script>
@@ -94,32 +91,44 @@
     </table>
 
     <hr>
-
-    <footer>
-        <div class="about_foot">
-            <span>
-            <ul class="foot_list">
-                <li>About Me</li>
-                <ul>
-                    <li>About</li>
+    <!-- fix footer so all content is inline like the header-->
+    <div id="bottom">
+        <footer>
+            <div id="about_foot">
+                <!-- <span> -->
+                <div class="about_me_foot">
+                <ul class="foot_list">
+                    <li>About Us</li>
+                    <hr>
+                    <ul>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                    </ul>
                 </ul>
-            </ul>
-            <ul class="foot_list">
-                <li>Contact</li>
-                <ul>
-                    <li>email</li>
-                    <li>number</li>
+                </div> 
+                <div class="contact_foot">
+                <ul class="foot_list">
+                    <li>Contact</li>
+                    <hr>
+                    <ul>
+                        <li>email</li>
+                        <li>number</li>
+                    </ul>
                 </ul>
-            </ul>
-            <ul class="foot_list">
-                <li>Social</li>
-                <ul>
-                    <li>Linkedin</li>
-                    <li>Instagram</li>
+                </div> 
+                <div>
+                <ul class="foot_list">
+                    <li>Social</li>
+                    <hr>
+                    <ul>
+                        <li><a href="https://www.instagram.com/sadcell_/" target="_blank">Instagram</a></li>
+                        <li>Spotify</li>
+                        <li>Apple Music</li>
+                    </ul>
                 </ul>
-            </ul>
-            </span>
-        </div>
-    </footer>
+                </div>
+                <!-- </span> -->
+            </div>
+        </footer>
+    </div>
   </body>
 </html>

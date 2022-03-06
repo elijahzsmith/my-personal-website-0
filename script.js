@@ -1,5 +1,9 @@
+// const navigationBar = querySelector('.navbar');
+// navigationBar.
+
+
 const h2 = document.createElement('h2');
-h2.textContent = 'This content added by JavaScript-- See us live';
+h2.textContent = 'See us live (JS)';
 
 document.querySelector('body').appendChild(h2);
 
@@ -21,3 +25,5 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+// add event listeners and modify some html and css using js

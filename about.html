@@ -5,13 +5,15 @@
       <title>About</title>
   </head>
   <body>
-    <header>
+    <!-- make nav bar functional on this page and all others except index.html 
+        perhaps try and use js to store the header and footer in a variable and add them in through the dom - this might get rid of your non responsiveness issues.
+    -->
         <header class="header">
             <nav class="navbar">
                 <a href="index.html" class="nav-logo">Sad Cell</a>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Shows</a>
+                        <a href="#" class="nav-link">Shows</a> 
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">Blog</a>
@@ -36,8 +38,33 @@
         <p>Sad Cell is a punk/shoegaze band based out of Austin, Tx. </p>
     </section>
 
-      
+    <!-- fix footer on this page too (and all others)-->
       <script src="script.js"></script>
-      
+      <footer>
+        <div class="about_foot">
+            <span>
+            <ul class="foot_list">
+                <li>About Me</li>
+                <ul>
+                    <li>About</li>
+                </ul>
+            </ul>
+            <ul class="foot_list">
+                <li>Contact</li>
+                <ul>
+                    <li>email</li>
+                    <li>number</li>
+                </ul>
+            </ul>
+            <ul class="foot_list">
+                <li>Social</li>
+                <ul>
+                    <li>Linkedin</li>
+                    <li>Instagram</li>
+                </ul>
+            </ul>
+            </span>
+        </div>
+    </footer>
   </body>
 </html>
