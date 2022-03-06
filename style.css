@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
+/* styles everything */
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,15 @@ a {
     text-decoration: none;
 }
 
+h2, p {
+    padding-left: 25px;
+}
+
+/* styles table data but I'm not sure it works here, will have to come back to this */
+td {
+    padding: 10px;
+}
+
 html, body {
     height: 100%;
 }
@@ -28,6 +38,7 @@ body {
 
 }
 
+/* header properties */
 header {
     position: sticky;
     top: 0;
@@ -36,18 +47,18 @@ header {
     border: 30px;
 }
 
-
+/* main image */
 div.pic_one img.sad_cell_pic1 {
     width: 100%;
     height: 800px;
 }
 
+/* more of the main image, might be able to combine the two ^^^ */
   .pic_one img {
     height: auto;
   }
   
-  /* Try to make the button be the spotify logo 
-     Alter the general css a bit to be more original and interesting   
+  /* Try to make the button be the spotify logo/a play button. Spotify button that needs to be fixed with JS and html
   */
   .pic_one .btn {
     position: relative;
@@ -64,11 +75,13 @@ div.pic_one img.sad_cell_pic1 {
     border-radius: 5px;
   }
   
+  /* hover fx */
   .pic_one .btn:hover {
     background-color: black;
     color: #FFF;
   }
 
+  /* nav bar properties */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -76,10 +89,12 @@ div.pic_one img.sad_cell_pic1 {
     padding: 1rem 1.5rem;
 }
 
+/* three line menu */
 .three_line {
     display: none;
 }
 
+/* aesthetics of three line menu */
 .bar {
     display: block;
     width: 25px;
@@ -95,6 +110,7 @@ div.pic_one img.sad_cell_pic1 {
     width: 15px;
 }
 
+/* hover effect of bar class but I'm not sure it's connected properly with my html- will have to come back to this */
 .bar:hover {
     box-shadow: black;
 }
@@ -124,6 +140,7 @@ div.pic_one img.sad_cell_pic1 {
     text-shadow: 2px 2px red;
 }
 
+/* how big my screen has to be to make the three line menu show up instead of inline list of links */
 @media only screen and (max-width: 2000px) {
     .nav-menu {
         position: fixed;
@@ -138,7 +155,7 @@ div.pic_one img.sad_cell_pic1 {
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
-
+    /* three line menu properties */
     .nav-menu.active {
         left: 0;
     }
@@ -165,6 +182,7 @@ div.pic_one img.sad_cell_pic1 {
 
 }
 
+/* table properties */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -183,10 +201,11 @@ table td {
     padding: 4px 8px;
 }
 
-table tr:nth-child(odd) td {
-    background-color: #e7edf0;
-}
+ table tr:nth-child(odd) td {
+    background-color: #524848;
+} 
 
+/* footer styling */
 #about_foot {
     display: flex;
     justify-content: space-between;
@@ -202,3 +221,4 @@ footer a {
 footer a:hover {
     color: #422d2d;
 }
+
